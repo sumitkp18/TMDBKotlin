@@ -1,0 +1,99 @@
+<RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0e1d21"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tmdb_logo"
+            android:layout_above="@+id/login_form"/>
+
+    <LinearLayout
+            android:id="@+id/login_form"
+            android:layout_width="395dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_bg"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/usernameLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/usernameLabel"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+        <EditText
+                android:id="@+id/loginUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:maxLength="100"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:hint="@string/username_hint"
+                tools:ignore="UnusedAttribute"/>
+
+        <TextView
+                android:id="@+id/passwordLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/passwordLabel"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+        <EditText
+                android:id="@+id/loginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password_hint"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                tools:ignore="UnusedAttribute"/>
+
+        <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+        <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#04d278"
+                android:text="@string/loginButton"
+                android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <ProgressBar
+            android:id="@+id/login_progress_bar"
+            style="?android:attr/progressBarStyleLarge"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_centerHorizontal="true" />
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/signup_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            app:srcCompat="@drawable/signup_logo" />
+
+
+
+
+</RelativeLayout>
+

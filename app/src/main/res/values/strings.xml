@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TMDBKotlin</string>
+    <string name="loginButton">Login</string>
+    <string name="passwordLabel">Password</string>
+    <string name="usernameLabel">Username</string>
+    <string name="username_hint">username@mail.com</string>
+    <string name="firstNameLabel">First Name</string>
+    <string name="lastNameLabel">Last Name</string>
+    <string name="submit">Signup</string>
+    <string name="password_hint">********</string>
+    <string name="top_rated_movies">Top Rated Movies</string>
+    <string name="trending_movies">Trending Movies</string>
+</resources>
